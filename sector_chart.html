@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-0003900c7fa0aa5cef9185d3e108425f"}, "mark": "circle", "encoding": {"color": {"value": "#3cb043"}, "opacity": {"condition": {"value": 1, "selection": "selector002"}, "value": 0.3}, "size": {"condition": {"value": 50, "selection": "selector002"}, "value": 30}, "tooltip": [{"field": "Sector", "type": "nominal"}, {"field": "Consumption Proportion", "type": "quantitative"}], "x": {"field": "Resource", "type": "nominal"}, "y": {"field": "Consumption Proportion", "type": "quantitative"}}, "selection": {"selector002": {"type": "multi", "fields": ["Sector"]}}, "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-0003900c7fa0aa5cef9185d3e108425f": [{"Sector": "Commercial", "Resource": "Coal", "Consumption": 787.0891265597148, "Consumption Proportion": 0.008712629420600288}, {"Sector": "Commercial", "Resource": "Distillate Fuel Oil", "Consumption": 6926.456327985739, "Consumption Proportion": 0.07667193605822624}, {"Sector": "Commercial", "Resource": "Geothermal", "Consumption": 386.36898395721926, "Consumption Proportion": 0.004276885124238489}, {"Sector": "Commercial", "Resource": "Hydropower", "Consumption": 19.705882352941178, "Consumption Proportion": 0.00021813292110585086}, {"Sector": "Commercial", "Resource": "Kerosene", "Consumption": 43.342245989304814, "Consumption Proportion": 0.000479774036787767}, {"Sector": "Commercial", "Resource": "Natural Gas", "Consumption": 65431.08377896613, "Consumption Proportion": 0.724284920624084}, {"Sector": "Commercial", "Resource": "Petroleum", "Consumption": 14242.055258467024, "Consumption Proportion": 0.1576514596219882}, {"Sector": "Commercial", "Resource": "Solar", "Consumption": 996.1390374331551, "Consumption Proportion": 0.011026693155428952}, {"Sector": "Commercial", "Resource": "Wind", "Consumption": 17.08199643493761, "Consumption Proportion": 0.00018908799484010572}, {"Sector": "Commercial", "Resource": "Wood", "Consumption": 1489.5508021390374, "Consumption Proportion": 0.016488481042700225}, {"Sector": "Electric Power", "Resource": "Coal", "Consumption": 296048.08912655973, "Consumption Proportion": 0.6084570526084854}, {"Sector": "Electric Power", "Resource": "Distillate Fuel Oil", "Consumption": 1276.7575757575758, "Consumption Proportion": 0.0026240741959624924}, {"Sector": "Electric Power", "Resource": "Natural Gas", "Consumption": 179836.871657754, "Consumption Proportion": 0.3696122923881783}, {"Sector": "Electric Power", "Resource": "Wood", "Consumption": 9393.72192513369, "Consumption Proportion": 0.019306580807373887}, {"Sector": "Industrial", "Resource": "Coal", "Consumption": 27194.089126559717, "Consumption Proportion": 0.057490598881589826}, {"Sector": "Industrial", "Resource": "Distillate Fuel Oil", "Consumption": 23770.80035650624, "Consumption Proportion": 0.05025347758588959}, {"Sector": "Industrial", "Resource": "Geothermal", "Consumption": 82.36007130124777, "Consumption Proportion": 0.00017411613976122105}, {"Sector": "Industrial", "Resource": "Hydropower", "Consumption": 315.2549019607843, "Consumption Proportion": 0.0006664754619922524}, {"Sector": "Industrial", "Resource": "Kerosene", "Consumption": 53.1283422459893, "Consumption Proportion": 0.0001123177981469828}, {"Sector": "Industrial", "Resource": "Natural Gas", "Consumption": 181532.2834224599, "Consumption Proportion": 0.3837745637196863}, {"Sector": "Industrial", "Resource": "Other Petroleum Products", "Consumption": 50099.8431372549, "Consumption Proportion": 0.10591529550520638}, {"Sector": "Industrial", "Resource": "Petroleum", "Consumption": 161716.89661319074, "Consumption Proportion": 0.34188316410584096}, {"Sector": "Industrial", "Resource": "Solar", "Consumption": 255.126559714795, "Consumption Proportion": 0.0005393590732288227}, {"Sector": "Industrial", "Resource": "Wind", "Consumption": 8.524064171122994, "Consumption Proportion": 1.8020590865253203e-05}, {"Sector": "Industrial", "Resource": "Wood", "Consumption": 27989.711229946523, "Consumption Proportion": 0.05917261113779236}, {"Sector": "Refinery", "Resource": "Coal", "Consumption": 8.24777183600713, "Consumption Proportion": 0.0004780065834120455}, {"Sector": "Refinery", "Resource": "Distillate Fuel Oil", "Consumption": 49.11764705882353, "Consumption Proportion": 0.0028466547235614682}, {"Sector": "Refinery", "Resource": "Natural Gas", "Consumption": 17197.14973262032, "Consumption Proportion": 0.9966753386930265}, {"Sector": "Residential", "Resource": "Coal", "Consumption": 0.0, "Consumption Proportion": 0.0}, {"Sector": "Residential", "Resource": "Distillate Fuel Oil", "Consumption": 9911.880570409981, "Consumption Proportion": 0.07291341979767717}, {"Sector": "Residential", "Resource": "Geothermal", "Consumption": 759.3600713012478, "Consumption Proportion": 0.005585977278789165}, {"Sector": "Residential", "Resource": "Kerosene", "Consumption": 278.5187165775401, "Consumption Proportion": 0.0020488293779440145}, {"Sector": "Residential", "Resource": "Natural Gas", "Consumption": 95357.63279857398, "Consumption Proportion": 0.7014663929579192}, {"Sector": "Residential", "Resource": "Petroleum", "Consumption": 19628.948306595365, "Consumption Proportion": 0.144393764422294}, {"Sector": "Residential", "Resource": "Wood", "Consumption": 10004.07486631016, "Consumption Proportion": 0.07359161616537643}, {"Sector": "Transportation", "Resource": "Coal", "Consumption": 0.0, "Consumption Proportion": 0.0}, {"Sector": "Transportation", "Resource": "Distillate Fuel Oil", "Consumption": 119422.30303030302, "Consumption Proportion": 0.18304228785390506}, {"Sector": "Transportation", "Resource": "Natural Gas", "Consumption": 15879.811051693405, "Consumption Proportion": 0.024339481586216998}, {"Sector": "Transportation", "Resource": "Petroleum", "Consumption": 517128.01247771835, "Consumption Proportion": 0.7926182305598779}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
